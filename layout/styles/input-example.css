@@ -1,0 +1,54 @@
+#input-example {
+    display: flex;
+    flex-direction: column;
+}
+
+#input-example > fieldset {
+    border: none;
+    position: relative;
+    padding: 0;
+    margin: 0 0 0.5rem 0;
+}
+
+#input-example legend {
+    position: absolute;
+    top: -0.8rem;
+    left: 0.5rem;
+    visibility: hidden;
+    background-color: white;
+    color: #f7992b;
+    opacity: 0;
+}
+
+#input-example > fieldset > input {
+    border: 1px solid lightgray;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    padding-left: 0.7rem;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+#input-example > fieldset > input:focus::placeholder {
+    font-size: 0;
+}
+
+#input-example > fieldset > input:focus {
+    border-color: #f7992b;
+}
+
+#input-example > fieldset > input:focus ~ legend {
+    visibility: visible;
+    opacity: 1;
+    /* transition: 0.8s; */
+}
+
+#input-example > ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}

@@ -1,0 +1,57 @@
+body {
+    font-size: 16px;
+}
+
+main {
+    padding: 1rem 2rem;
+    user-select: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+details {
+    width: 300px;
+    /* white-space: nowrap; */
+}
+
+details > p {
+    margin-top: 0.5rem;
+}
+
+a {
+    color: rgb(41, 40, 35);
+    font-size: 0.875rem;
+    border: 1px solid rgb(41, 40, 35);
+    padding: 0.25rem;
+    text-decoration: none;
+}
+
+a:active,
+.active {
+    color: #f7992b;
+    border-color: #f7992b;
+    text-decoration: solid #f7992b underline;
+    text-underline-offset: 0.125rem;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.white-space-nowrap {
+    white-space: nowrap;
+}
+
+.work-breal-all {
+    word-break: break-all;
+}
